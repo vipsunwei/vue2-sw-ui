@@ -1,10 +1,12 @@
 {
-  "name": "sw-ui",
-  "version": "0.1.0",
-  "private": true,
+  "name": "sw-vue-ui",
+  "version": "0.1.4",
+  "private": false,
+  "main": "lib/sw-vue-ui/sw-vue-ui.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-lib": "vue-cli-service build --target lib --name sw-vue-ui packages/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -26,5 +28,6 @@
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "keywords": ["vue-ui", "loading"]
 }
